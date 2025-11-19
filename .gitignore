@@ -1,0 +1,71 @@
+# Ігнорування системних файлів
+# ---------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+
+# Ігнорування IDE та редакторів
+# ---------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+# Python
+# ---------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Віртуальні середовища
+venv/
+env/
+.venv/
+.env/
+
+# Файли змінних середовища
+.env
+.env.*
+!.env.example
+
+
+# Node.js
+# ---------------------------------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+
+# Terraform
+# ---------------------------------
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
