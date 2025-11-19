@@ -1,0 +1,19 @@
+name: PR Notification to Discord
+
+on:
+  pull_request:
+    types: [opened, reopened, closed]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send PR event to Discord
+        uses: Ilshidur/action-discord@v2
+        with:
+          args: |
+            📢 **Pull Request:** [${{ github.event.pull_request.title }}](${{ github.event.pull_request.html_url }})
+            👤 Author: ${{ github.actor }}
+            🔁 Action: ${{ github.event.action }}
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
