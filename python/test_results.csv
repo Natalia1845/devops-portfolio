@@ -1,0 +1,3 @@
+timestamp,endpoint,status_code,response_time,error
+2025-11-30 13:55:37,https://api.github.com,200,0.36,
+2025-11-30 13:55:42,https://badurl.fake,ERROR,,"HTTPSConnectionPool(host='badurl.fake', port=443): Read timed out. (read timeout=5)"
